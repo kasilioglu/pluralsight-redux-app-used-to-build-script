@@ -7,7 +7,7 @@ export default {
   noInfo: true, // set to false to see a list of every file being bundled.
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
     './src/index'
   ],
   target: 'web',
